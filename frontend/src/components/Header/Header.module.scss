@@ -1,0 +1,44 @@
+$header-button-font-size: 20px;
+$header-button-line-height: 26px;
+$sign-in-icon: url('../../assets/images/header_sign_in_icon.svg');
+$nav-icon: url('../../assets/images/nav_icon.svg');
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .titleBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  .buttonGroup {
+    font-size: $header-button-font-size;
+    line-height: $header-button-line-height;
+
+    &__signInButton {
+      font-size: $header-button-font-size;
+      line-height: $header-button-line-height;
+      color: #27AE60;
+      background: #fff;
+
+      &:after {
+        content: "";
+        background: $sign-in-icon no-repeat center;
+        padding: 0 10px;
+      }
+    }
+
+    &__signUpButton {
+      font-size: $header-button-font-size;
+      line-height: $header-button-line-height;
+      background: #27AE60;
+      border-radius: 8px;
+    }
+   &__menuButton {
+     content: "";
+     background: $nav-icon no-repeat center;
+     padding: 0 10px;
+   }
+  }
+}
