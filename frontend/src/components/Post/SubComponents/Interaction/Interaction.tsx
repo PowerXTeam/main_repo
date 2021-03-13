@@ -2,8 +2,8 @@ import { FC } from 'react';
 import s from './Interaction.module.scss';
 
 type InteractionProps = {
-    countLike?: number | string,
-    countComm?: number | string
+    countLike?: number,
+    countComm?: number
 };
 
 const Interaction: FC<InteractionProps> = ({ countLike = 0, countComm = 0 }) => {

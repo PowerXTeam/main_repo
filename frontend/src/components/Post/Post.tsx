@@ -9,7 +9,7 @@ type PostProps = {
         wrapper: any
     },
     profile: { name: string, icon: any },
-    interaction?: { countLike?: number | string, countComm?: number | string },
+    interaction?: { countLike?: number, countComm?: number },
     content: string,
     tags: Array<string>,
 };

@@ -18,8 +18,8 @@ type profile = {
 }
 
 type inter = {
-  countLike?: number | string,
-  countComm?: number | string
+  countLike?: number,
+  countComm?: number
 }
 
 type tag = Array<string>;
