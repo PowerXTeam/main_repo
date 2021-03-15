@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './assets/styles/App.scss';
 import wrapperIcon from './assets/images/wrapper.jpg';
 import autorIcon from './assets/images/autor.png';
@@ -41,11 +39,26 @@ const interactionPost1: inter = {
 }
 
 const tagPost1: tag = ['Спорт', 'Здоровье']
+const tagPost2: tag = ['Спорт', 'Здоровье', 'Сила', 'Дух']
 
 function App() {
   return (
     <div className="app">
-      <Post articleInfo={articleInfoPost1} profile={profilePost1} interaction={interactionPost1} content="По рациону порядок. Но тело говорит, что не чувствует оно дефицита, это его типа сохранка. Стою на 68 кг уже месяц. Я решила, что пусть будет так. Скоро весна и форсировать нет нужды." tags={tagPost1} />
+      <Header />
+      <main className="main">
+        <div className="container">
+          <Post articleInfo={articleInfoPost1}
+            profile={profilePost1}
+            interaction={interactionPost1}
+            content="По рациону порядок. Но тело говорит, что не чувствует оно дефицита, это его типа сохранка. Стою на 68 кг уже месяц. Я решила, что пусть будет так. Скоро весна и форсировать нет нужды."
+            tags={tagPost1} />
+            <Post articleInfo={articleInfoPost1}
+            profile={profilePost1}
+            interaction={interactionPost1}
+            content="По рациону порядок. Но тело говорит, что не чувствует оно дефицита, это его типа сохранка. Стою на 68 кг уже месяц. Я решила, что пусть будет так. Скоро весна и форсировать нет нужды."
+            tags={tagPost2} />
+        </div>
+      </main>
     </div>
   );
 }
